@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <label for="num1">Insira o primeiro número:</label>
+                <input type="numero" name="num1" id="num1" required>
+                <label for="num2">Insira o segundo número:</label>
+                <input type="numero" name="num2" id="num2" required>
+            </fieldset>
+            <div>
+                <button type="submit" id="somar">+</button>
+                <button type="submit" id="subtrair">-</button>
+                <button type="submit" id="multiplicar">x</button>
+                <button type="submit" id="dividir">/</button>
+            </div>
+        </form>
+        <div>
+            <h2>Resultado:</h2>
+            <p></p>
+        </div>
+
+
+    </main>
+    <script src="./calculadora.js"></script>
+</body>
+</html>

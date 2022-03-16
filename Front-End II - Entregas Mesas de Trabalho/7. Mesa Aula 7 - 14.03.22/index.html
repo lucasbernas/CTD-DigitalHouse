@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        
+        <form>
+        <h1>Adicionar um novo post</h1>
+        <h2>Crie uma nova postagem para os usuários</h2>
+            <fieldset>
+                <section>
+                    <label for="titulo">Título </label>
+                    <input type="titulo" name="titulo" id="titulo" placeholder="Insira um titulo para a postagem" required>
+                </section>
+                <section class="escolhas">
+                    <div>
+                    <label for="categoria">Categoria:</label>
+                        <select name="categoria" id="categoria">
+                            <option>Escolha uma opção</option>
+                            <optgroup label="Categorias">
+                                <option value="Dev Front End">Dev Front End</option>
+                                <option value="devBackEnd">Dev Back End</option>
+                                <option value="devFullStack">Dev Full Stack</option>
+                                <option value="cientistaDeDados">Cientista de Dados</option>
+                                <option value="engenheiroDeDdos">Engenheiro de Dados</option>
+                                <option value="arquiteoDeTi">Arquiteto de TI</option>                      
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                    <label for="linguagem">Linguagem:</label>
+                        <select name="linguagem" id="linguagem">
+                            <option>Escolha uma opção</option>
+                            <optgroup label="Linguagens">
+                                <option value="javascript">Javascript</option>
+                                <option value="java">Java</option>
+                                <option value="python">Python</option>
+                                <option value="c++">C++</option>
+                                <option value="c#">C#</option>
+                                <option value="ruby">Ruby</option>                      
+                            </optgroup>
+                        </select>
+                    </div>
+                </section>
+                <section>
+                    <label for="texto">Texto da postagem: </label>
+                    <textarea name="texto" id="texto" cols="40" rows="10"></textarea>
+                    <p id="alertaTextArea"></p>
+                </section>
+                <div class="divBotao">
+                    <button type="submit" id="buttonEnviar">Enviar</button>
+                    <button type="reset" id="buttonResetar">Resetar</button>
+                </div>
+            </fieldset>
+
+            <!-- <div>
+                <label for="">Título</label>
+                <input type="text" id="titleInput">
+                <span id="titleHint">Insira titulos que instiguema a curiosidade do leitor</span>
+            </div> -->
+
+        </form>
+    </main>
+
+    
+    <script src="./main.js"></script>
+    
+</body>
+</html>
