@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+
+    background-color: rgb(0, 1, 70);
+    color: white;
+    margin: 25px;
+    font-size: 20px
+
+}
+
+form{
+
+    margin: 50px 0 0 50px
+}
+
+label{
+    display: block;
+    margin: 10px 0 10px 0
+}
+
+
+textarea, input{
+    margin-top: 10px;
+    display: inline-block;
+    border: 1px solid lightgray;
+    width: 45%
+}
+
+button{
+    display: block;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px
+}
+
+.controlador small {
+
+    color: red;
+    display: none;
+    font-size: 12px;
+
+}
+
+.controlador.erro input{
+
+    border-color: red;
+
+}
+
+.controlador.erro textarea{
+
+    border-color: red;
+
+}
+
+.controlador.erro small {
+
+    display: block;
+
+}
+
+.card {
+    width: auto;
+    max-width: 40em;
+    background-color: rgb(226, 226, 226);
+    box-sizing: border-box;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: 3px solid rgb(0, 140, 175);
+    color:  rgb(1, 8, 46);
+    padding: 10px;
+    margin: 20px auto 20px auto;
+    
+}
+
+.postagens{
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap:wrap;
+    justify-content:flex-start left;
+    padding: auto;
+    
+}
+
