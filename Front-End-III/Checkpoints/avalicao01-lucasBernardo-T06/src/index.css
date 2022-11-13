@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+  border: 0;
+  margin: 0;
+  background-color: #1E1E1E;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* ESTILIZAÇÃO ERROS */
+
+.form-error{
+  margin: 5vh 10vh 5vh 10vh;
+  padding: 3vh;
+  justify-content:center;
+  background-color: #333333;
+  border-radius: 25px;
+  border-color: #FF7070;
+  border-style: double;
+  border-width: 0.4em;
+}
+
+.error{
+  background-color: #4d4d4d;
+  color: rgba(255, 255, 255);
+  border-radius: 12px;
+  display: inline-block;
+  width: 100%;
+  height: 48px;
+  left: 32vh;
+  top: 232vh;
+  border-style: dashed ;
+  border-color: #FF7070;
+  border-width: 0.1em;
+ }
+
+ span{
+  color: #FF7070;
+  background-color: #333333;
+ }
+
+ .span2{
+  color: #FF7070;
+  background-color: #333333;
+  margin-left: 22vh;
+ }
+
+
+/* ESTILIZAÇÃO DOS CONTAINERS */
+
+.form-container{
+  margin: 5vh 20vh 5vh 20vh;
+  padding: 3vh;
+  justify-content:center;
+  background-color: #333333;
+  border-radius: 25px;
+}
+
+.form{
+  background-color: #333333;
+  border-radius: 12px;
+  margin: 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto auto;
+  
+}
+
+.nome-container{
+  grid-area: 1 / 1 / 1 / 2;
+  background-color: #333333;
+}
+
+.matricula-container{
+  grid-area: 1 / 3 / 1 / 4;
+  display: block;
+  background-color: #333333;
+}
+
+.profissao-container{
+  grid-area: 2 / 1 / 2 / 2;
+  background-color: #333333;
+}
+
+
+.button-container{
+  grid-area: 2 / 3 / 2 / 4;
+  align-self: center;
+  text-align: center;
+  background-color: #333333;
+ }
+
+
+
+/* ESTILIZAÇÃO DOS ELEMENTOS */
+
+.cards-container h2{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1E1E1E;
+  margin-top: 0px;
+ }
+
+h1{
+  color: white; 
+  grid-area: 1 / 1 / 1 / 4;
+  margin-left: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 900px;
+  font-size: 4.5vh;
+  line-height: 60px;
+  background-color: #333333;
+} 
+
+p{
+  background-color: #333333;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 20px 20px 20px 0px;
+  display: inline-flex;
+  font-size: 3vh;
+}
+
+input, select, option{
+  background-color: #4d4d4d;
+  color: rgba(255, 255, 255);
+  border-radius: 12px;
+  display: inline-block;
+  width: 100%;
+  height: 48px;
+  left: 32vh;
+  top: 232vh;
+  border-style: dashed ;
+  border-color: #36CE7C;
+  border-width: 0.1em;
+ }
+
+ select{
+  color: rgba(255, 255, 255, 0.4);
+ }
+
+button{
+  width: 231px;
+  height: 60px;
+  left: 937px;
+  top: 304px;
+  background: #36CE7C;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 20px 20px 20px 20px;
+  border-style: double;
+  border-color: rgb(12, 36, 46);
+  border-width: 0.2em;
+  font-size: 90%;
+}
+
+button:hover{
+  color: white;
+  background: #0095c2;
+  border-color: rgb(247, 247, 247);
+  border-width: 0.4em;
+  transition: 0.4s;
+}
+
+
+/* ESTILIZAÇÃO CONTAINER DOS CARDS */
+
+.cards-container{
+  margin: 5vh 20vh 5vh 20vh;
+  padding: 3vh;
+  justify-content:center;
+}
+
+.cards{
+  display: flex;
+  gap:40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ESTILIZAÇÃO PARA PÁGINAS MENORES */
+
+ @media (max-width: 1100px){
+
+  h1{
+    grid-area: 1 / 1 / 1 / 2;
+    font-size: 3.5vh;
+  }
+
+  .form{
+    grid-template-columns: auto auto;
+    
+  }
+  
+  .form-container{
+    transition-duration: 1s;
+    margin: 5vh 10% 5vh 10%;
+  }
+
+  .nome-container{
+    grid-area: 1 / 1 / 1 / 2;
+  }
+  
+  .matricula-container{
+    grid-area: 2 / 1 / 2 / 2;
+    display: block;
+  }
+  
+  .profissao-container{
+    grid-area: 3 / 1 / 3 / 2;
+  }
+  
+  .button-container{
+    grid-area: 4 / 1 / 4 / 2;
+    align-self: center;
+    text-align: center;
+   }
+
+   input, select, option{
+    width: 120%;
+    transition-duration: 0.6s;
+  }
+
+ }
+
+@media (max-width: 912px){
+  .cards-container{
+    margin: 10vh 5vh 5vh 5vh;
+    padding: 3vh;
+    justify-content:center;
+    flex-wrap: wrap;
+  }
+}
+
+
+
+ @media (max-width: 523px){
+
+  input, select, option{
+    transition-duration: 0.6s;
+    width: 100%;
+
+  }
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
